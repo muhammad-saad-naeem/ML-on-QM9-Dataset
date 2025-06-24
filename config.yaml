@@ -1,0 +1,29 @@
+#
+# Single‑location config parsed with `yaml.safe_load`.
+# Change property or model hyper‑params here.
+#
+dataset:
+  target_property: "u0"     # choose any QM9 key, e.g. mu, gap, homo, lumo
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+training:
+  seed: 42
+  test_size: 0.1
+  val_size: 0.1
+models:
+  baselines:
+    ridge:
+      alpha: 1.0
+    random_forest:
+      n_estimators: 500
+      max_depth: 25
+    xgboost:
+      n_estimators: 1000
+      learning_rate: 0.05
+      max_depth: 8
+  gnn:
+    hidden_dim: 128
+    num_layers: 6
+    epochs: 100
+    batch_size: 64
+    lr: 1e-3

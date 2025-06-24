@@ -1,0 +1,25 @@
+name: qm9
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - rdkit
+  - numpy
+  - pandas
+  - scikit-learn
+  - xgboost
+  - optuna
+  - mlflow
+  - pytorch
+  - pytorch-geometric
+  - dgl
+  - matplotlib
+  - seaborn
+  - notebook
+  - tqdm
+  - pytest
+  - black
+  - flake8
+  - pre-commit
