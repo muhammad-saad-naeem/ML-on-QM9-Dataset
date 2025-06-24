@@ -43,6 +43,27 @@ server (`mlruns/`).  Feel free to tweak `config.yaml` to explore other propertie
 └── .github/workflows/ # CI with pytest + flake8
 ```
 
+📊 Parity Plots – True vs Predicted Property Values
+These plots show how well each model predicts the chosen molecular property (e.g., dipole moment, energy, HOMO–LUMO gap). The closer the points are to the black diagonal, the better the model's predictions.
+
+🔁 Ridge Regression
+Predicts linearly from RDKit descriptors + Coulomb matrix. Struggles with non-linear patterns.
+![Ridge Parity](assets/plots/parity_ridge.png)
+
+
+
+🌳 Random Forest
+Captures some non-linearity with tree ensembles. Often better than Ridge, but limited without 3D structure.
+![Random Forest Parity](assets/plots/parity_random_forest.png)
+
+🚀 XGBoost
+Gradient-boosted trees typically outperform Random Forests on tabular data.
+![XGBoost Parity](assets/plots/parity_xgboost.png)
+
+
+
+
+
 ## References
 
 * Ramakrishnan *et al.* **Sci. Data** 1, 140022 (2014) – Original QM9 publication.
