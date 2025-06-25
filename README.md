@@ -4,7 +4,7 @@
 properties of small organic molecules from the QM9 dataset.  Classical descriptors (e.g. RDKit
 fingerprints) and graph neural networks are benchmarked side‑by‑side.
 
-<img src="https://raw.githubusercontent.com/openai/brand/main/logo/slack/large.png" width="0"/> <!-- placeholder for GitHub banner -->
+
 
 ## Quick Start
 
